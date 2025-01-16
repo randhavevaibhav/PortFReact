@@ -2,7 +2,7 @@ import MainPageLayout from "../../components/MainPageLayout";
 import CompanyImg from "../../assets/images/company_1.webp";
 import ProjectImg from "../../assets/images/project_1.webp";
 import TCSImg from "../../assets/images/tata_consultancy_services_logo.jpeg";
-import CouponCabinImg from "../../assets/images/couponcabin_com_logo.jpeg";
+import CouponCabinImg from "../../assets/images/couponcabin_com_logo.webp";
 import testImg from "../../assets/images/test.jpg";
 import "./AboutPage.css";
 import Section from "../../components/Section";
