@@ -1,0 +1,22 @@
+.title_container {
+    grid-area: title;
+  }
+  
+  .description_container {
+    grid-area: description;
+  }
+  .image_container {
+    grid-area: image;
+    
+  }
+  
+  .about_me_grid {
+    grid-template-areas: "title" "image" "description";
+  }
+  
+  @media screen and (min-width: 900px) {
+    .about_me_grid {
+      grid-template-areas: "title image" "description image";
+    }
+  }
+  
