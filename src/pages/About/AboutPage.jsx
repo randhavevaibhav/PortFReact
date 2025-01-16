@@ -1,6 +1,8 @@
 import MainPageLayout from "../../components/MainPageLayout";
 import CompanyImg from "../../assets/images/company_1.webp";
 import ProjectImg from "../../assets/images/project_1.webp";
+import TCSImg from "../../assets/images/tata_consultancy_services_logo.jpeg";
+import CouponCabinImg from "../../assets/images/couponcabin_com_logo.jpeg";
 import testImg from "../../assets/images/test.jpg";
 import "./AboutPage.css";
 import Section from "../../components/Section";
@@ -60,23 +62,23 @@ const AboutPage = () => {
               <div className="flex flex-col gap-6 shrink-0 border rounded-xl border-gray-300 p-5 w-full">
                 <div>
                   <div className="mb-1 text-sm">Experience</div>
-                  <div className="font-semibold">8 years</div>
+                  <div className="font-semibold">3 years</div>
                 </div>
                 <div>
                   <div className="mb-1 text-sm">Time zone</div>
-                  <div className="font-semibold">EST (UTC-5)</div>
+                  <div className="font-semibold">IST (UTC+05:30)</div>
                 </div>
                 <div>
                   <div className="mb-1 text-sm">Email</div>
-                  <div className="font-semibold">tzztson@gmail.com</div>
+                  <div className="font-semibold">randhavevaibhav3@gmail.com</div>
                 </div>
                 <div>
                   <div className="mb-1 text-sm">GitHub</div>
-                  <div className="font-semibold">gungho0619</div>
+                  <div className="font-semibold">randhavevaibhav</div>
                 </div>
                 <div>
                   <div className="mb-1 text-sm">LinkedIn</div>
-                  <div className="font-semibold">gungho0619</div>
+                  <div className="font-semibold">vaibhav-randhave-b8b099205</div>
                 </div>
               </div>
               {/* <!-- Experience div --> */}
@@ -147,7 +149,7 @@ const AboutPage = () => {
                   {/* <!-- company image --> */}
                   <div className="h-10 w-10 rounded border">
                     <img
-                      src={CompanyImg}
+                      src={TCSImg}
                       width="60"
                       loading="lazy"
                       alt="company image"
@@ -158,10 +160,10 @@ const AboutPage = () => {
                   {/* <!-- position/company name --> */}
                   <div>
                     {/* <!-- position --> */}
-                    <div className="font-semibold">Full Stack Engineer</div>
+                    <div className="font-semibold">Actimize and Web Developer</div>
                     {/* <!-- position --> */}
                     {/* <!-- company name --> */}
-                    <div className="text-sm text-gray-500">LOLICO</div>
+                    <div className="text-sm text-gray-500">TCS</div>
                     {/* <!-- company name --> */}
                   </div>
                   {/* <!-- position/company name --> */}
@@ -169,23 +171,12 @@ const AboutPage = () => {
                 {/* <!-- title --> */}
                 {/* <!-- dates --> */}
                 <div className="text-sm">
-                  Jun 2022 - Feb 2024 ⋅ 1 year 9 months
+                  Nov 2021 - Oct 2023 ⋅ 1 year 11 months
                 </div>
                 {/* <!-- dates --> */}
                 {/* <!-- description --> */}
                 <div className="text-sm">
-                  At Lolico, I had the opportunity to serve as both a team lead
-                  and an engineering manager for a team. In my role as a team
-                  lead, I maintained close communication with the client,
-                  planned upcoming work, estimated tasks, and ensured smooth
-                  operations. As an engineering manager, I prioritized team
-                  happiness and developed growth plans for engineers.
-                  Additionally, I gained experience as a technical interviewer
-                  for the hiring team. In my capacity as an engineer, I worked
-                  with various technologies including frontend, backend, desktop
-                  applications, and Debian packages. Notably, I successfully
-                  implemented a UI Kit and led the redesign of a web
-                  application.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam ipsam vitae officiis provident quam tenetur fugit, nisi praesentium ducimus.
                 </div>
                 {/* <!-- description --> */}
               </div>
@@ -198,7 +189,7 @@ const AboutPage = () => {
                   {/* <!-- company image --> */}
                   <div className="h-10 w-10 rounded border">
                     <img
-                      src={CompanyImg}
+                      src={CouponCabinImg}
                       width="60"
                       loading="lazy"
                       alt="company image"
@@ -209,10 +200,10 @@ const AboutPage = () => {
                   {/* <!-- position/company name --> */}
                   <div>
                     {/* <!-- position --> */}
-                    <div className="font-semibold">Full Stack Engineer</div>
+                    <div className="font-semibold">JavaScript Developer</div>
                     {/* <!-- position --> */}
                     {/* <!-- company name --> */}
-                    <div className="text-sm text-gray-500">LOLICO</div>
+                    <div className="text-sm text-gray-500">CouponCabin</div>
                     {/* <!-- company name --> */}
                   </div>
                   {/* <!-- position/company name --> */}
@@ -220,23 +211,12 @@ const AboutPage = () => {
                 {/* <!-- title --> */}
                 {/* <!-- dates --> */}
                 <div className="text-sm">
-                  Jun 2022 - Feb 2024 ⋅ 1 year 9 months
+                  March 2024 - present - 11 months
                 </div>
                 {/* <!-- dates --> */}
                 {/* <!-- description --> */}
                 <div className="text-sm">
-                  At Lolico, I had the opportunity to serve as both a team lead
-                  and an engineering manager for a team. In my role as a team
-                  lead, I maintained close communication with the client,
-                  planned upcoming work, estimated tasks, and ensured smooth
-                  operations. As an engineering manager, I prioritized team
-                  happiness and developed growth plans for engineers.
-                  Additionally, I gained experience as a technical interviewer
-                  for the hiring team. In my capacity as an engineer, I worked
-                  with various technologies including frontend, backend, desktop
-                  applications, and Debian packages. Notably, I successfully
-                  implemented a UI Kit and led the redesign of a web
-                  application.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas exercitationem saepe recusandae quasi non quo odit consectetur, dolorum fugit! Omnis voluptatem iusto, perspiciatis saepe maxime nemo molestias explicabo cum.
                 </div>
                 {/* <!-- description --> */}
               </div>

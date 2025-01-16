@@ -11,7 +11,7 @@ const HomePage = () => {
       <MainPageLayout>
         {/* <!-- Hero --> */}
         <div className="brand_name py-6">
-          <h1 className="text-4xl">XYZ xyz</h1>
+          <h1 className="text-4xl">Vaibhav Randhave</h1>
         </div>
         <Section className={`py-6 gap-9`}>
           <p className="text-base text-base-text-weak sm:text-lg">
@@ -50,7 +50,7 @@ const HomePage = () => {
           <p>
             Email me at{" "}
             <a href="#" className="underline">
-              test@gmail.com
+              randhavevaibhav3@gmail.com
             </a>
           </p>
           <a href="#" className="underline">

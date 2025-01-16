@@ -28,10 +28,10 @@ const Navbar = () => {
 
           <div className="ml-auto flex gap-4">
             {/* <!-- Social media icons --> */}
-            <a href="#">
+            <a href="https://github.com/randhavevaibhav" target="_blank">
               <img src={gitHubLogo} width="30" height="30" alt="github logo" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/vaibhav-randhave-b8b099205/" target="_blank">
               <img
                 src={linkedInLogo}
                 width="30"
