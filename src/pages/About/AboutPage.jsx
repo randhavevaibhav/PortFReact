@@ -1,12 +1,11 @@
 import MainPageLayout from "../../components/MainPageLayout";
-import CompanyImg from "../../assets/images/company_1.webp";
-import ProjectImg from "../../assets/images/project_1.webp";
-import TCSImg from "../../assets/images/tata_consultancy_services_logo.jpeg";
-import CouponCabinImg from "../../assets/images/couponcabin_com_logo.webp";
+
 import testImg from "../../assets/images/test.jpg";
 import "./AboutPage.css";
 import Section from "../../components/Section";
 import ProjectList from "../../components/ProjectList";
+import Details from "../../components/AboutPageComponents/Details/Details";
+
 const AboutPage = () => {
   return (
     <>
@@ -52,182 +51,9 @@ const AboutPage = () => {
         {/* <!-- About me container --> */}
 
         {/* <!-- Details container --> */}
-        <Section className={`py-6 gap-9`}>
-          <h2 className="text-2xl font-semibold capitalize">Details</h2>
-          {/* <!-- Wrapper div --> */}
-          <div className="flex sm:flex-row flex-col gap-7">
-            {/* <!-- col-1 --> */}
-            <Section className={`flex-1 gap-6 sm:max-w-[21.5rem]`}>
-              {/* <!-- Experience div --> */}
-              <div className="flex flex-col gap-6 shrink-0 border rounded-xl border-gray-300 p-5 w-full">
-                <div>
-                  <div className="mb-1 text-sm">Experience</div>
-                  <div className="font-semibold">3 years</div>
-                </div>
-                <div>
-                  <div className="mb-1 text-sm">Time zone</div>
-                  <div className="font-semibold">IST (UTC+05:30)</div>
-                </div>
-                <div>
-                  <div className="mb-1 text-sm">Email</div>
-                  <div className="font-semibold">randhavevaibhav3@gmail.com</div>
-                </div>
-                <div>
-                  <div className="mb-1 text-sm">GitHub</div>
-                  <div className="font-semibold">randhavevaibhav</div>
-                </div>
-                <div>
-                  <div className="mb-1 text-sm">LinkedIn</div>
-                  <div className="font-semibold">vaibhav-randhave-b8b099205</div>
-                </div>
-              </div>
-              {/* <!-- Experience div --> */}
 
-              {/* <!-- Tech stack div --> */}
-              <Section className={` flex-1  gap-6`}>
-                <div className="font-bold text-lg capitalize">Stack</div>
-                {/* <!-- Tech stack pills container --> */}
-                <div className="flex flex-wrap gap-3">
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Javascript</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Typescript</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Postgres</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>NodeJs</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>React</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>NextJs</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Jest</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Tailwind CSS</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Git/Github</span>
-                  </div>
-                </div>
-                {/* <!-- Tech stack pills container --> */}
-              </Section>
-              {/* <!-- Tech stack div --> */}
-
-              {/* <!-- Interests div --> */}
-              <Section className={` flex-1 gap-6`}>
-                <div className="font-bold text-lg capitalize">Interests</div>
-                {/* <!-- Tech stack pills container --> */}
-                <div className="flex flex-wrap gap-3">
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Drawing</span>
-                  </div>
-                  <div className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50">
-                    <span>Anime</span>
-                  </div>
-                </div>
-                {/* <!-- Tech stack pills container --> */}
-              </Section>
-              {/* <!-- Interests div --> */}
-            </Section>
-
-            {/* <!-- col-1 --> */}
-
-            {/* <!-- col-2 --> */}
-            <Section className="flex flex-1 flex-col gap-6">
-              <div className="text-lg font-semibold">Experience</div>
-              {/* <!-- Comapny 1 --> */}
-              <div className="flex flex-col gap-4">
-                {/* <!-- title --> */}
-                <div className="flex items-center gap-4">
-                  {/* <!-- company image --> */}
-                  <div className="h-10 w-10 rounded border">
-                    <img
-                      src={TCSImg}
-                      width="60"
-                      loading="lazy"
-                      alt="company image"
-                    />
-                  </div>
-                  {/* <!-- company image --> */}
-
-                  {/* <!-- position/company name --> */}
-                  <div>
-                    {/* <!-- position --> */}
-                    <div className="font-semibold">Actimize and Web Developer</div>
-                    {/* <!-- position --> */}
-                    {/* <!-- company name --> */}
-                    <div className="text-sm text-gray-500">TCS</div>
-                    {/* <!-- company name --> */}
-                  </div>
-                  {/* <!-- position/company name --> */}
-                </div>
-                {/* <!-- title --> */}
-                {/* <!-- dates --> */}
-                <div className="text-sm">
-                  Nov 2021 - Oct 2023 ⋅ 1 year 11 months
-                </div>
-                {/* <!-- dates --> */}
-                {/* <!-- description --> */}
-                <div className="text-sm">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam ipsam vitae officiis provident quam tenetur fugit, nisi praesentium ducimus.
-                </div>
-                {/* <!-- description --> */}
-              </div>
-              {/* <!-- Comapny 1 --> */}
-
-              {/* <!-- Comapny 2 --> */}
-              <div className="flex flex-col gap-4">
-                {/* <!-- title --> */}
-                <div className="flex items-center gap-4">
-                  {/* <!-- company image --> */}
-                  <div className="h-10 w-10 rounded border">
-                    <img
-                      src={CouponCabinImg}
-                      width="60"
-                      loading="lazy"
-                      alt="company image"
-                    />
-                  </div>
-                  {/* <!-- company image --> */}
-
-                  {/* <!-- position/company name --> */}
-                  <div>
-                    {/* <!-- position --> */}
-                    <div className="font-semibold">JavaScript Developer</div>
-                    {/* <!-- position --> */}
-                    {/* <!-- company name --> */}
-                    <div className="text-sm text-gray-500">CouponCabin</div>
-                    {/* <!-- company name --> */}
-                  </div>
-                  {/* <!-- position/company name --> */}
-                </div>
-                {/* <!-- title --> */}
-                {/* <!-- dates --> */}
-                <div className="text-sm">
-                  March 2024 - present - 11 months
-                </div>
-                {/* <!-- dates --> */}
-                {/* <!-- description --> */}
-                <div className="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas exercitationem saepe recusandae quasi non quo odit consectetur, dolorum fugit! Omnis voluptatem iusto, perspiciatis saepe maxime nemo molestias explicabo cum.
-                </div>
-                {/* <!-- description --> */}
-              </div>
-              {/* <!-- Comapny 2 --> */}
-            </Section>
-            {/* <!-- col-2 --> */}
-          </div>
-          {/* <!-- Wrapper div --> */}
-        </Section>
+        <Details />
         {/* <!-- Details container --> */}
-
 
         {/* <!-- Projects container --> */}
         {/* items-start class affects <a>View all </a> tag*/}

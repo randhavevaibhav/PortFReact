@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import MainPageLayout from "../components/MainPageLayout";
 import Section from "../components/Section";
-
+import ProfileIMg from "../assets/logos/github.svg"
 import ProjectList from "../components/ProjectList";
 
 const HomePage = () => {
@@ -10,26 +10,42 @@ const HomePage = () => {
     <>
       <MainPageLayout>
         {/* <!-- Hero --> */}
-        <div className="brand_name py-6">
-          <h1 className="text-4xl">Vaibhav Randhave</h1>
+
+        <div className={`md:flex flex-row py-6 gap-9`}>
+          <div className="w-52 profile_img rounded-full mx-auto md:mb-0 mb-10 flex-shrink-0">
+            <img src={ProfileIMg} className="rounded-full object-cover" alt="profile image" />
+          </div>
+
+          <div className="">
+            <h1 className="text-4xl text-center md:text-start">Vaibhav Randhave</h1>
+            <h2 className="text-2xl text-center md:text-start">Web developer</h2>
+            <p className="text-base text-base-text-weak sm:text-lg ">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              odio nemo non similique eveniet exercitationem repudiandae
+              molestiae voluptatibus cupiditate nobis animi aliquid soluta,
+              obcaecati voluptate distinctio consequuntur. Inventore, impedit
+              ratione. Perferendis, vero officia assumenda repellat in ipsum
+              vitae id? Modi odio consequuntur beatae suscipit officia quidem
+              quo in molestiae laboriosam qui ducimus doloribus ut quis, iusto,
+              neque omnis iure molestias.
+            </p>
+            {/* <!-- Redirects to about me page --> */}
+           <div className="flex gap-2">
+           <Link
+              to={`/about`}
+              className="border px-2 py-1 rounded bg-gray-200"
+            >
+              About Me
+            </Link>
+            <Link
+              to={`/download`}
+              className="border px-2 py-1 rounded bg-gray-200"
+            >
+             Download Resume
+            </Link>
+           </div>
+          </div>
         </div>
-        <Section className={`py-6 gap-9`}>
-          <p className="text-base text-base-text-weak sm:text-lg">
-            Hello! I am a dedicated Full-Stack Web Developer with a strong
-            passion for AI and Blockchain technologies. With 8 years of
-            programming experience, I specialize in crafting sophisticated web
-            applications. I am deeply engaged in researching new technologies,
-            continually advancing my skills to deliver innovative AI and
-            blockchain applications that optimize user experiences and
-            operational efficiency. I am available to commit over 40 hours per
-            week and operate within the EST time zone, ensuring more than 6 to 8
-            hours of overlapping time each day.
-          </p>
-          {/* <!-- Redirects to about me page --> */}
-          <Link to={`/about`} className="border px-2 py-1 rounded bg-gray-200">
-            About Me
-          </Link>
-        </Section>
 
         {/* <!-- Projects --> */}
         <Section className={`py-6 gap-9`}>
