@@ -1,6 +1,6 @@
 import MainPageLayout from "../../components/MainPageLayout";
 
-import testImg from "../../assets/images/test.jpg";
+import ProfileIMg from "../../assets/images/profile.webp"
 import "./AboutPage.css";
 import Section from "../../components/Section";
 import ProjectList from "../../components/ProjectList";
@@ -36,7 +36,7 @@ const AboutPage = () => {
             {/* <!-- Profile image --> */}
             <div className="image_container w-full flex justify-center">
               <img
-                src={testImg}
+                src={ProfileIMg}
                 className="object-cover aspect-ratio:1/1 w-72 h-72"
                 alt="profile image"
               />

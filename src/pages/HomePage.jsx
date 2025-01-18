@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import MainPageLayout from "../components/MainPageLayout";
 import Section from "../components/Section";
-import ProfileIMg from "../assets/logos/github.svg"
+import ProfileIMg from "../assets/images/profile.webp"
 import ProjectList from "../components/ProjectList";
 
 const HomePage = () => {
