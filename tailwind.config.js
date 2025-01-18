@@ -10,6 +10,13 @@ export default {
       screens: {
         'xs': '300px',
       },
+      colors:{
+        primary:"var(--text_primary)",
+        background:"var(--background)"
+      },
+      fill:{
+        iconfill:"var(--icon_fill)"
+      }
       
     },
   },

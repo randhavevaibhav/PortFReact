@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.dark{
+    --text_primary:#ffff;
+    --background:black;
+    --icon_fill:var(--text_primary)
+
+}
+
+
+.light{
+    --text_primary:#000000;
+    --background:#ffff;
+    --icon_fill:var(--text_primary)
+
+}
+
+

@@ -1,6 +1,8 @@
 import gitHubLogo from "../assets/logos/github.svg";
-import linkedInLogo from "../assets/logos/linkedin.svg";
+
 import { Link } from "react-router-dom";
+import GithubSVG from "./GithubSVG";
+import LinkedInSVG from "./LinkedInSVG";
 const Navbar = () => {
   return (
     <header className="sticky h-16 top-0 z-20 flex items-center w-full backdrop-blur">
@@ -14,14 +16,14 @@ const Navbar = () => {
           </div>
           {/* <!-- Brand logo --> */}
 
-          <div className="flex items-center md:gap-6 gap-4">
-            <a href="#projects" className="text-base font-bold">
+          <div className="flex items-center md:gap-6 gap-4 ">
+            <a href="#projects" className="text-base text-primary font-bold">
               Projects
             </a>
-            <Link to={"/about"} className="text-base font-bold">
+            <Link to={"/about"} className="text-base font-bold text-primary">
               About
             </Link>
-            <a href="#" className="text-base font-bold">
+            <a href="#" className="text-base font-bold text-primary">
               Contact
             </a>
           </div>
@@ -29,14 +31,10 @@ const Navbar = () => {
           <div className="ml-auto flex md:gap-4 gap-2">
             {/* <!-- Social media icons --> */}
             <a href="https://github.com/randhavevaibhav" className="inline-flex shrink-0" target="_blank">
-              <img src={gitHubLogo} width={22} height={22} alt="github logo" />
+              <GithubSVG/>
             </a>
             <a href="https://www.linkedin.com/in/vaibhav-randhave-b8b099205/" className="inline-flex shrink-0" target="_blank">
-              <img
-                src={linkedInLogo}
-                width={22} height={22}
-                alt="linked in logo"
-              />
+             <LinkedInSVG/>
             </a>
 
             {/* <!-- Social media icons --> */}

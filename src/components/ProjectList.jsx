@@ -55,7 +55,7 @@ const ProjectContainer = ({projectImg,projectName,projectDesc})=>{
 const ProjectList = ()=>{
 return(<>
 
-  <div className="flex flex-col gap-6 sm:gap-8 sm:grid sm:grid-cols-2">
+  <div className="flex flex-col gap-6 sm:gap-8 sm:grid sm:grid-cols-2 text-primary">
             {projectList.map((project) => (
               <ProjectContainer
                 key={project.id}

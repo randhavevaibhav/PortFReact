@@ -12,9 +12,9 @@ const AboutPage = () => {
       <MainPageLayout>
         {/* <!-- About me container --> */}
         <Section className={`py-6 gap-4`}>
-          <h2 className="text-4xl font-bold">About Me</h2>
+          <h2 className="text-4xl font-bold text-primary">About Me</h2>
 
-          <div className="about_me_grid grid gap-8">
+          <div className="about_me_grid grid gap-8 text-primary">
             <div className="title_container py-6">
               <h1 className="lg:text-4xl text-3xl font-bold">
                 I ❤️ to build things
@@ -43,7 +43,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div>
-            <a href="#" className="font-semibold underline">
+            <a href="#" className="font-semibold underline text-primary">
               Download Resume
             </a>
           </div>
@@ -58,11 +58,11 @@ const AboutPage = () => {
         {/* <!-- Projects container --> */}
         {/* items-start class affects <a>View all </a> tag*/}
         <div className="flex items-start flex-col gap-9 py-6">
-          <h2 className="text-2xl font-semibold capitalize">Projects</h2>
+          <h2 className="text-2xl font-semibold capitalize text-primary">Projects</h2>
           <ProjectList />
           <a
             href="#"
-            className="px-5 py-4 border font-bold inline-flex leading-none"
+            className="px-5 py-4 border font-bold inline-flex leading-none text-primary bg-background"
           >
             View all
           </a>

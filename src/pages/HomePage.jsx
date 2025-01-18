@@ -17,9 +17,9 @@ const HomePage = () => {
           </div>
 
           <div className="">
-            <h1 className="text-4xl text-center md:text-start">Vaibhav Randhave</h1>
-            <h2 className="text-2xl text-center md:text-start">Web developer</h2>
-            <p className="text-base text-base-text-weak sm:text-lg ">
+            <h1 className="text-4xl text-center md:text-start text-primary">Vaibhav Randhave</h1>
+            <h2 className="text-2xl text-center md:text-start text-primary">Web developer</h2>
+            <p className="text-base text-base-text-weak sm:text-lg text-primary">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
               odio nemo non similique eveniet exercitationem repudiandae
               molestiae voluptatibus cupiditate nobis animi aliquid soluta,
@@ -33,13 +33,13 @@ const HomePage = () => {
            <div className="flex gap-2">
            <Link
               to={`/about`}
-              className="border px-2 py-1 rounded bg-gray-200"
+              className="border px-2 py-1 rounded bg-background text-primary"
             >
               About Me
             </Link>
             <Link
               to={`/download`}
-              className="border px-2 py-1 rounded bg-gray-200"
+              className="border px-2 py-1 rounded bg-background text-primary"
             >
              Download Resume
             </Link>
@@ -49,27 +49,27 @@ const HomePage = () => {
 
         {/* <!-- Projects --> */}
         <Section className={`py-6 gap-9`}>
-          <h1 className="text-2xl font-bold">Projects</h1>
+          <h1 className="text-2xl font-bold text-primary">Projects</h1>
           {/* <!-- Projects container --> */}
           <ProjectList />
           {/* <!-- Projects container --> */}
 
           {/* <!-- Redirects to projects page  --> */}
-          <a href="#projects" className="border px-2 py-1 rounded bg-gray-200">
+          <a href="#projects" className="border px-2 py-1 rounded  bg-background text-primary">
             View all
           </a>
         </Section>
 
         {/* <!-- Contact --> */}
         <Section className={`py-6 gap-4`}>
-          <h2 className="text-2xl font-bold">Connect</h2>
-          <p>
-            Email me at{" "}
-            <a href="#" className="underline">
+          <h2 className="text-2xl font-bold text-primary">Connect</h2>
+          <p className="text-primary">
+            Email me at&nbsp;:&nbsp;
+            <a href="#" className="underline text-primary">
               randhavevaibhav3@gmail.com
             </a>
           </p>
-          <a href="#" className="underline">
+          <a href="#" className="underline text-primary">
             Download Resume
           </a>
         </Section>
