@@ -7,7 +7,8 @@
 .dark{
     --text_primary:#ffff;
     --background:black;
-    --icon_fill:var(--text_primary)
+    --icon_fill:var(--text_primary);
+    --icon_stroke:#ffffff
 
 }
 
@@ -15,7 +16,8 @@
 .light{
     --text_primary:#000000;
     --background:#ffff;
-    --icon_fill:var(--text_primary)
+    --icon_fill:var(--text_primary);
+    --icon_stroke:#050505
 
 }
 

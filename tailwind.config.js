@@ -16,6 +16,9 @@ export default {
       },
       fill:{
         iconfill:"var(--icon_fill)"
+      },
+      stroke:{
+        iconstroke:"var(--icon_stroke)"
       }
       
     },
