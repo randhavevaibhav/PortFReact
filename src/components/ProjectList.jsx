@@ -33,7 +33,7 @@ const projectList = [
 
 const ProjectContainer = ({projectImg,projectName,projectDesc})=>{
     return(<>
-    <a href="#" className="border border-black rounded-xl" >
+    <a href="#" className="border border-themeborder rounded-xl" >
               <div className="rounded-t-[inherit]">
                 <img
                   src={projectImg}

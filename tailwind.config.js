@@ -19,6 +19,9 @@ export default {
       },
       stroke:{
         iconstroke:"var(--icon_stroke)"
+      },
+      borderColor:{
+        themeborder:"var(--theme_border)"
       }
       
     },

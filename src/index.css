@@ -8,7 +8,8 @@
     --text_primary:#ffff;
     --background:black;
     --icon_fill:var(--text_primary);
-    --icon_stroke:#ffffff
+    --icon_stroke:#ffffff;
+    --theme_border:var(--text_primary);
 
 }
 
@@ -17,7 +18,8 @@
     --text_primary:#000000;
     --background:#ffff;
     --icon_fill:var(--text_primary);
-    --icon_stroke:#050505
+    --icon_stroke:#050505;
+    --theme_border:var(--text_primary);
 
 }
 
