@@ -80,7 +80,7 @@ const Navbar = () => {
     </header>
 
 
-    <div className="md:hidden items-center md:gap-6 gap-4 flex fixed bottom-0 w-full justify-around backdrop-blur">
+    <div className="md:hidden h-[50px] items-center md:gap-6 gap-4 flex fixed bottom-0 w-full justify-around backdrop-blur">
       <Link to={"/"} className="text-xs text-primary font-bold flex flex-col items-center">
         <span><HomeSVG /></span>
         <span>Home</span>
