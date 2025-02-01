@@ -1,10 +1,10 @@
-import MainPageLayout from "../../components/MainPageLayout";
+import MainPageLayout from "../../components/MainPageLayout/MainPageLayout";
 
-import ProfileIMg from "../../assets/images/profile.webp"
+import ProfileIMg from "../../assets/images/profile.webp";
 import "./AboutPage.css";
-import Section from "../../components/Section";
-import ProjectList from "../../components/ProjectList";
-import Details from "../../components/AboutPageComponents/Details/Details";
+import Section from "../../components/Section/Section";
+import ProjectList from "../../pages/Projects/ProjectList";
+import Details from "./Details/Details";
 
 const AboutPage = () => {
   return (
@@ -58,7 +58,9 @@ const AboutPage = () => {
         {/* <!-- Projects container --> */}
         {/* items-start class affects <a>View all </a> tag*/}
         <div className="flex items-start flex-col gap-9 py-6">
-          <h2 className="text-2xl font-semibold capitalize text-primary">Projects</h2>
+          <h2 className="text-2xl font-semibold capitalize text-primary">
+            Projects
+          </h2>
           <ProjectList />
           <a
             href="#"
