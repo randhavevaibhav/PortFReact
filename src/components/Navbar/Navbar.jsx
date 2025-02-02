@@ -7,22 +7,10 @@ import { LuSunMedium } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+import { handleChangeTheme } from "../../utils/browser";
+
 import BottomNav from "../BottomNav/BottomNav";
 const Navbar = () => {
-  const [theme, setTheme] = useState("light");
-
-  const handleChangeTheme = (changedTheme) => {
-    setTheme(changedTheme);
-    if (changedTheme === "light") {
-      document.body.classList.remove("dark");
-      document.body.classList.add("light");
-    }
-    if (changedTheme === "dark") {
-      document.body.classList.remove("light");
-      document.body.classList.add("dark");
-    }
-  };
-
   return (
     <>
       <header className="sticky h-header top-0 z-20 flex  w-full backdrop-blur-2xl">
@@ -55,27 +43,23 @@ const Navbar = () => {
             <div className="md:ml-auto flex gap-4 items-center">
               {/* <!-- Social media icons --> */}
 
-              {theme === "light" && (
-                <button
-                  className="flex-shrink-0"
-                  onClick={() => {
-                    handleChangeTheme("dark");
-                  }}
-                >
-                  <FaRegMoon className="dark:text-white text-black size-[1.3rem] md:size-[1.4rem]" />
-                </button>
-              )}
+              <button
+                className="flex-shrink-0 dark:hidden block"
+                onClick={() => {
+                  handleChangeTheme("dark");
+                }}
+              >
+                <FaRegMoon className="dark:text-white text-black size-[1.3rem] md:size-[1.4rem]" />
+              </button>
 
-              {theme === "dark" && (
-                <button
-                  className="flex-shrink-0"
-                  onClick={() => {
-                    handleChangeTheme("light");
-                  }}
-                >
-                  <LuSunMedium className="dark:text-white text-black size-[1.5rem]" />
-                </button>
-              )}
+              <button
+                className="flex-shrink-0 dark:block hidden"
+                onClick={() => {
+                  handleChangeTheme("light");
+                }}
+              >
+                <LuSunMedium className="dark:text-white text-black size-[1.5rem]" />
+              </button>
 
               <a
                 href="https://github.com/randhavevaibhav"
