@@ -20,17 +20,25 @@ const AboutPage = () => {
                 I ❤️ to build things
               </h1>
             </div>
-            <div className="description_container">
-              <p className="sm:text-lg text-base">
-                I am a proficient full-stack web developer specializing in
-                blockchain and artificial intelligence (AI) with 8 years of
-                experience. I excel in crafting secure, scalable web
-                applications that leverage blockchain for decentralized
-                solutions. I integrate AI technologies for advanced analytics
-                and machine learning, enhancing user interaction and operational
-                efficiency. My passion lies in delivering innovative,
-                cutting-edge solutions that drive technological advancement and
-                business success.
+            <div className="description_container ">
+              <p className="sm:text-lg text-base mb-2">
+                I am a <b>React</b> and <b>JavaScript</b> developer with{" "}
+                <b>total 3+ years</b> of experience in building scalable web
+                applications using <b>React</b>, <b>Redux</b>, <b>TypeScript</b>
+                , <b>PostgreSQL</b>, <b>Tailwind CSS</b>,and <b>Node.js.</b>
+              </p>
+              <p className="sm:text-lg text-base mb-2">
+                I worked at <b>TCS</b> <b>2+ years</b> as an{" "}
+                <b>Actimize and web developer</b> and I am currently working as
+                a <b>JavaScript developer</b> with <b>CouponCabin</b> from last{" "}
+                <b>10 months</b>, enhancing platform performance and efficiency.
+              </p>
+              <p className="sm:text-lg text-base mb-2">
+                With expertise in front-end and back-end technologies, I help
+                businesses improve scalability, optimize UI/UX, and accelerate
+                development. Passionate about clean code and problem-solving,
+                I’m eager to contribute to impactful projects and drive
+                technical success! 🚀
               </p>
             </div>
             {/* <!-- Profile image --> */}

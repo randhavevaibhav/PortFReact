@@ -7,6 +7,12 @@ export default {
       screens: {
         xs: "300px",
       },
+      height: {
+        header: "var(--header-height)",
+      },
+      width: {
+        brand_logo: "var(--brand-logo-width)",
+      },
       colors: {
         primary: "var(--text_primary)",
         background: "var(--background)",

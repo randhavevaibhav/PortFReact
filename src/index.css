@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root{
+    --header-height:64px;
+    --brand-logo-width:54px;
+}
 
 .dark{
     --text_primary:#ffff;

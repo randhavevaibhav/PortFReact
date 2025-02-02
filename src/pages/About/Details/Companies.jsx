@@ -48,14 +48,16 @@ const Companies = () => {
               <div className="font-semibold">{company.position}</div>
               {/* <!-- position --> */}
               {/* <!-- company name --> */}
-              <div className="text-sm text-gray-500">{company.name}</div>
+              <div className="text-sm font-bold tracking-wide">
+                {company.name}
+              </div>
               {/* <!-- company name --> */}
             </div>
             {/* <!-- position/company name --> */}
           </div>
           {/* <!-- title --> */}
           {/* <!-- dates --> */}
-          <div className="text-sm">{company.dates}</div>
+          <div className="text-sm text-gray-400">{company.dates}</div>
           {/* <!-- dates --> */}
           {/* <!-- description --> */}
           <div className="text-sm">{company.description}</div>
