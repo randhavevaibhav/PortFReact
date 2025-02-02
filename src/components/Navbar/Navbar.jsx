@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import { handleChangeTheme } from "../../utils/browser";
-import "../../styles/ToolTip.css";
+import "../../styles/Tooltip.css";
 
 import BottomNav from "../BottomNav/BottomNav";
 
