@@ -16,7 +16,7 @@ const AboutPage = () => {
 
           <div className="about_me_grid grid gap-8 text-primary">
             <div className="title_container py-6">
-              <h1 className="lg:text-4xl text-3xl font-bold">
+              <h1 className="lg:text-4xl text-3xl md:mx-0 mx-auto w-fit">
                 I ❤️ to build things
               </h1>
             </div>

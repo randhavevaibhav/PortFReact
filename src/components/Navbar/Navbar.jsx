@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 import brandLogo from "../../assets/logos/logo.svg";
 import { FaRegMoon } from "react-icons/fa";
@@ -8,8 +7,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 import { handleChangeTheme } from "../../utils/browser";
+import "../../styles/ToolTip.css";
 
 import BottomNav from "../BottomNav/BottomNav";
+
 const Navbar = () => {
   return (
     <>
@@ -43,23 +44,25 @@ const Navbar = () => {
             <div className="md:ml-auto flex gap-4 items-center">
               {/* <!-- Social media icons --> */}
 
-              <button
-                className="flex-shrink-0 dark:hidden block"
-                onClick={() => {
-                  handleChangeTheme("dark");
-                }}
-              >
-                <FaRegMoon className="dark:text-white text-black size-[1.3rem] md:size-[1.4rem]" />
-              </button>
+              <div className="tooltip" data-tool-tip="change theme">
+                <button
+                  className="flex-shrink-0 dark:hidden block"
+                  onClick={() => {
+                    handleChangeTheme("dark");
+                  }}
+                >
+                  <FaRegMoon className="dark:text-white text-black size-[1.3rem] md:size-[1.4rem]" />
+                </button>
 
-              <button
-                className="flex-shrink-0 dark:block hidden"
-                onClick={() => {
-                  handleChangeTheme("light");
-                }}
-              >
-                <LuSunMedium className="dark:text-white text-black size-[1.5rem]" />
-              </button>
+                <button
+                  className="flex-shrink-0 dark:block hidden"
+                  onClick={() => {
+                    handleChangeTheme("light");
+                  }}
+                >
+                  <LuSunMedium className="dark:text-white text-black size-[1.5rem]" />
+                </button>
+              </div>
 
               <a
                 href="https://github.com/randhavevaibhav"

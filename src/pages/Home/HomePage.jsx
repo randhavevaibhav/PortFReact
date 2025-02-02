@@ -5,6 +5,8 @@ import Section from "../../components/Section/Section";
 import ProfileIMg from "../../assets/images/profile.webp";
 import ProjectList from "../Projects/ProjectList";
 import Typed from "typed.js";
+import { IoLocationOutline } from "react-icons/io5";
+
 import { useEffect, useRef } from "react";
 const HomePage = () => {
   const titleRef = useRef(null);
@@ -34,9 +36,14 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            <h1 className="text-4xl text-center md:text-start text-primary">
-              Vaibhav Randhave
+            <h1 className="text-4xl  text-center md:text-start text-primary">
+              Vaibhav Randhave{" "}
             </h1>
+            <span className="text-primary text-base flex items-center gap-2 w-fit md:mx-0 mx-auto">
+              <IoLocationOutline className="size-[1.2rem]" />
+              Pune, Maharashtra
+            </span>
+
             <h2 className="text-2xl text-center md:text-start text-primary">
               I am <span ref={titleRef}></span> Developer
             </h2>

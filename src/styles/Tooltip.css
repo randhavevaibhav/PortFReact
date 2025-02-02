@@ -1,0 +1,25 @@
+.tooltip{
+    position: relative;
+}
+
+.tooltip::after{
+    position: absolute;
+    display: block;
+    content: attr(data-tool-tip);
+    background-color: grey;
+    padding: 0.2rem 0.6rem;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    top: calc(100% + 3px);
+    right: 1px;
+    white-space: nowrap;
+    transform: scale(0);
+    transition:transform ease-out 150ms;
+
+
+}
+
+.tooltip:hover::after{
+    transform: scale(1);
+}
