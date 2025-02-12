@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import MainPageLayout from "../../components/MainPageLayout/MainPageLayout";
 import Section from "../../components/Section/Section";
 import ProfileIMg from "../../assets/images/profile.webp";
-import ProjectList from "../Projects/ProjectList";
+import ProjectList from "../Projects/MainProjects";
 import Typed from "typed.js";
 import { IoLocationOutline } from "react-icons/io5";
 
 import { useEffect, useRef } from "react";
+import { useScrollTop } from "../../hooks/useScrollTop";
 const HomePage = () => {
+  useScrollTop();
   const titleRef = useRef(null);
   useEffect(() => {
     const typed = new Typed(titleRef.current, {
@@ -80,12 +82,12 @@ const HomePage = () => {
           {/* <!-- Projects container --> */}
 
           {/* <!-- Redirects to projects page  --> */}
-          <a
-            href="#projects"
-            className="border border-themeborder px-2 py-1 rounded  bg-background text-primary"
+          <Link
+            to={"/projects"}
+            className="px-5 py-3 border-themeborder border rounded-md font-bold inline-flex leading-none text-primary bg-background hover:border-primary"
           >
             View all
-          </a>
+          </Link>
         </Section>
 
         {/* <!-- Contact --> */}

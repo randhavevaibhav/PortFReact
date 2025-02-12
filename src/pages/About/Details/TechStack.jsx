@@ -1,3 +1,5 @@
+import Pills from "../../../components/Pills/Pills";
+
 const techStackList = [
   {
     id: 1,
@@ -42,16 +44,7 @@ const TechStack = () => {
     <>
       <div className="font-bold text-lg capitalize">Stack</div>
 
-      <div className="flex flex-wrap gap-3">
-        {techStackList.map((item) => (
-          <div
-            key={item.id}
-            className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50 capitalize"
-          >
-            <span>{item.name}</span>
-          </div>
-        ))}
-      </div>
+      <Pills list={techStackList} />
     </>
   );
 };

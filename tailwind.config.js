@@ -16,6 +16,8 @@ export default {
       colors: {
         primary: "var(--text_primary)",
         background: "var(--background)",
+        text_weak:"var(--text_weak)",
+        base_surface:"var(--bg_base_surface)"
       },
       fill: {
         iconfill: "var(--icon_fill)",

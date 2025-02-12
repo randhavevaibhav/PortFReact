@@ -1,3 +1,5 @@
+import Pills from "../../../components/Pills/Pills";
+
 const interestsList = [
   {
     id: 1,
@@ -14,16 +16,9 @@ const Interests = () => {
     <>
       <div className="font-bold text-lg capitalize">Interests</div>
 
-      <div className="flex flex-wrap gap-3">
-        {interestsList.map((item) => (
-          <div
-            key={item.id}
-            className="inline-flex items-center rounded-sm text-sm px-2 py-1 border hover:bg-gray-50"
-          >
-            <span>{item.name}</span>
-          </div>
-        ))}
-      </div>
+     
+       <Pills list={interestsList}/>
+    
     </>
   );
 };

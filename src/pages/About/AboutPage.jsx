@@ -3,10 +3,13 @@ import MainPageLayout from "../../components/MainPageLayout/MainPageLayout";
 import ProfileIMg from "../../assets/images/profile.webp";
 import "./AboutPage.css";
 import Section from "../../components/Section/Section";
-import ProjectList from "../../pages/Projects/ProjectList";
+import ProjectList from "../Projects/MainProjects";
 import Details from "./Details/Details";
+import { Link } from "react-router-dom";
+import { useScrollTop } from "../../hooks/useScrollTop";
 
 const AboutPage = () => {
+  useScrollTop();
   return (
     <>
       <MainPageLayout>
@@ -70,12 +73,13 @@ const AboutPage = () => {
             Projects
           </h2>
           <ProjectList />
-          <a
+          <Link
+            to={"/projects"}
             href="#"
-            className="px-5 py-4 border font-bold inline-flex leading-none text-primary bg-background"
+            className="px-5 py-3 border-themeborder border rounded-md font-bold inline-flex leading-none text-primary bg-background hover:border-primary"
           >
             View all
-          </a>
+          </Link>
         </div>
         {/* <!-- Projects container --> */}
       </MainPageLayout>

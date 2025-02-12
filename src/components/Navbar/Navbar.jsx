@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <header className="sticky h-header top-0 z-20 flex  w-full backdrop-blur-2xl">
         <div className="mx-auto w-full max-w-6xl ">
-          {/* for now addded overflow scroll to nav need to remove and convert it to sidebar */}
+       
           <nav className="flex items-center md:gap-6 gap-3 md:justify-normal justify-between">
             {/* <!-- Brand logo --> */}
             <div className="logo inline-flex shrink-0 md:ml-0 ml-3 pt-0.5">
@@ -30,9 +30,9 @@ const Navbar = () => {
             </div>
             {/* <!-- Brand logo --> */}
             <div className="md:flex items-center md:gap-6 gap-4 hidden">
-              <a href="#projects" className="text-base text-primary font-bold">
+             <Link to={"/projects"} className="text-base font-bold text-primary">
                 Projects
-              </a>
+              </Link>
               <Link to={"/about"} className="text-base font-bold text-primary">
                 About
               </Link>
@@ -66,14 +66,16 @@ const Navbar = () => {
 
               <a
                 href="https://github.com/randhavevaibhav"
-                className="inline-flex shrink-0"
+                className="inline-flex shrink-0 tooltip"
+                data-tool-tip="Github"
                 target="_blank"
               >
                 <FaGithub className="dark:text-white text-black size-[1.5rem]" />
               </a>
               <a
                 href="https://www.linkedin.com/in/vaibhav-randhave-b8b099205/"
-                className="inline-flex shrink-0 md:ml-0 mr-3"
+                className="inline-flex shrink-0 md:ml-0 mr-3 tooltip"
+                data-tool-tip="LinkedIn"
                 target="_blank"
               >
                 <FaLinkedin className="dark:text-white text-black size-[1.5rem]" />

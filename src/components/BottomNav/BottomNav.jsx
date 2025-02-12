@@ -19,7 +19,7 @@ const bottomNavList = [
     icon: (
       <FaRegLightbulb size={"1.5rem"} className="dark:text-white text-black" />
     ),
-    linkTo: "#",
+    linkTo: "/projects",
   },
   {
     id: 3,
