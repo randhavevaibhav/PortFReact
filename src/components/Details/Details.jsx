@@ -1,4 +1,4 @@
-import Section from "../../../components/Section/Section";
+import {Section} from "../common/Section/Section";
 import PersonalDetails from "./PersonalDetails";
 import TechStack from "./TechStack";
 import Interests from "./Interests";

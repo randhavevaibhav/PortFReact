@@ -1,4 +1,4 @@
-import Pills from "../../../components/Pills/Pills";
+import {Pills} from "../common/Pills/Pills";
 
 const interestsList = [
   {

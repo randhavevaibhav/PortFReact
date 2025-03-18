@@ -1,5 +1,5 @@
-import TCSImg from "../../../assets/images/tata_consultancy_services_logo.jpeg";
-import CouponCabinImg from "../../../assets/images/couponcabin_com_logo.webp";
+import TCSImg from "../../assets/images/tata_consultancy_services_logo.jpeg";
+import CouponCabinImg from "../../assets/images/couponcabin_com_logo.webp";
 
 const companyList = [
   {
@@ -9,7 +9,7 @@ const companyList = [
     position: "Actimize and Web Developer",
     dates: "Nov 2021 - Oct 2023 - 1 year 11 months",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nam ipsam vitae officiis provident quam tenetur fugit, nisi praesentium ducimus.",
+      `From resume`,
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const companyList = [
     position: "JavaScript Developer",
     dates: "March 2024 - present - 11 months",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptas exercitationem saepe recusandae quasi non quo odit consectetur, dolorum fugit! Omnis voluptatem iusto, perspiciatis saepe maxime nemo molestias explicabo cum.",
+      "From resume",
   },
 ];
 
@@ -45,7 +45,7 @@ const Companies = () => {
             {/* <!-- position/company name --> */}
             <div>
               {/* <!-- position --> */}
-              <div className="font-semibold">{company.position}</div>
+              <h2 className="text-lg font-semibold">{company.position}</h2>
               {/* <!-- position --> */}
               {/* <!-- company name --> */}
               <div className="text-sm font-bold tracking-wide">

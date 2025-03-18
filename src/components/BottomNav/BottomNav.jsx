@@ -33,13 +33,13 @@ const bottomNavList = [
     id: 4,
     text: "Contact",
     icon: <FiPhone size={"1.5rem"} className="dark:text-white text-black" />,
-    linkTo: "#",
+    linkTo: "/contact",
   },
 ];
 
 const BottomNav = () => {
   return (
-    <div className="md:hidden h-[50px] items-center md:gap-6 gap-4 flex fixed bottom-0 w-full justify-around backdrop-blur">
+    <div className="lg:hidden h-[50px] items-center md:gap-6 gap-4 flex fixed bottom-0 w-full justify-around backdrop-blur">
       {bottomNavList.map((item) => {
         return (
           <Link

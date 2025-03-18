@@ -29,16 +29,16 @@ const Navbar = () => {
               </Link>
             </div>
             {/* <!-- Brand logo --> */}
-            <div className="md:flex items-center md:gap-6 gap-4 hidden">
+            <div className="lg:flex items-center md:gap-6 gap-4 hidden">
              <Link to={"/projects"} className="text-base font-bold text-primary">
                 Projects
               </Link>
               <Link to={"/about"} className="text-base font-bold text-primary">
                 About
               </Link>
-              <a href="#" className="text-base font-bold text-primary">
+              <Link to={`/contact`} className="text-base font-bold text-primary">
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div className="md:ml-auto flex gap-4 items-center">

@@ -1,0 +1,14 @@
+
+import * as yup from "yup";
+
+export const contactFormSchema = yup.object().shape({
+  name: yup
+    .string()
+    .required(`Name is required.`)
+    .max(12, `name cannot exceed 12 characters.`),
+  email: yup
+    .string()
+    .email(`Please enter a valid email`)
+    .required("Email is required"),
+
+});

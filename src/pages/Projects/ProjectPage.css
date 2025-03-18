@@ -1,0 +1,22 @@
+.markdown_container a {
+color:royalblue;
+letter-spacing: 1px;
+font-size: medium;
+}
+
+.markdown_container>*{
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+}
+
+
+@media screen and (width>800px)
+{
+    .markdown_container>*{
+        margin-block: 0.8rem !important;
+       
+        }
+        .markdown_container a{
+            font-size: large;
+        }
+}
