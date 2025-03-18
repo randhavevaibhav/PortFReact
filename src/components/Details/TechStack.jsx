@@ -1,4 +1,4 @@
-import {Pills} from "../common/Pills/Pills";
+import { Pills } from "../common/Pills/Pills";
 
 const techStackList = [
   {
@@ -42,7 +42,7 @@ const techStackList = [
 const TechStack = () => {
   return (
     <>
-      <div className="font-bold text-lg capitalize">Stack</div>
+      <div className="font-bold text-lg capitalize">Tech Stack</div>
 
       <Pills list={techStackList} />
     </>

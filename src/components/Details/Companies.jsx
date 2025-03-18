@@ -8,8 +8,7 @@ const companyList = [
     companyImg: TCSImg,
     position: "Actimize and Web Developer",
     dates: "Nov 2021 - Oct 2023 - 1 year 11 months",
-    description:
-      `From resume`,
+    description: `Worked on Actimize technologies (RCM Designer, ActOne Designer) and frontend frameworks (ReactJs, JavaScript, HTML, CSS) to develop quality web solutions. Customized ABC, AFI applications using VTL, XSL, XML. Handled alert workflows, DDQ, and alert views. Enhanced automation test suite with Selenium Java for SIT bug detection. Built a Java Swing app for Excel data manipulation, saving four days of manual work. Managed backend data with Oracle SQL, handled code changes, deployments, and PROD support.`,
   },
   {
     id: 2,
@@ -17,8 +16,7 @@ const companyList = [
     companyImg: CouponCabinImg,
     position: "JavaScript Developer",
     dates: "March 2024 - present - 11 months",
-    description:
-      "From resume",
+    description: `Developed and maintained a Chrome extension with React.js, using Node.js for server-side logic. Managed Postgres database views and tables. Ensured seamless UI/UX integration and collaborated in an Agile environment with daily stand-ups and sprint planning.`,
   },
 ];
 

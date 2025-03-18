@@ -1,6 +1,6 @@
 import React from "react";
-import {Section} from "../../common/Section/Section";
-
+import { Section } from "../../common/Section/Section";
+import profileImg from "../../../assets/images/profile.webp";
 export const AboutMeSection = () => {
   return (
     <Section className={`py-6 gap-4`}>
@@ -36,14 +36,17 @@ export const AboutMeSection = () => {
         {/* <!-- Profile image --> */}
         <div className="image_container w-full flex justify-center">
           <img
-            src={""}
+            src={profileImg}
             className="object-cover aspect-ratio:1/1 w-72 h-72"
             alt="profile image"
           />
         </div>
       </div>
       <div>
-        <a href="#" className="font-semibold underline text-primary">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1CZuRwT9uHImm5OsHCydMLHrd_vFsg_Yq"
+          className="font-semibold underline text-primary"
+        >
           Download Resume
         </a>
       </div>
