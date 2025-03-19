@@ -13,7 +13,7 @@ export const Project = ({ projectId,projectImg, projectName, summary }) => {
           />
         </div>
         <div className="flex flex-col gap-2 p-5">
-          <h1 className="md:text-3xl text-2xl font-bold mb-3">{projectName}</h1>
+          <h1 className="md:text-3xl text-2xl font-bold mb-3 capitalize">{projectName}</h1>
           <p  className="text-sm md:text-base">{summary}</p>
         </div>
       </Link>

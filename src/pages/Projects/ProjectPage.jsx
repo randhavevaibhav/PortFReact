@@ -26,7 +26,7 @@ export const ProjectPage = () => {
           <IoMdArrowRoundBack className="group-hover:-translate-x-1 duration-300"/>
           <span>Back</span>
           </button>
-          <h1 className="title text-4xl font-semibold md:my-4 my-2">{project.title}</h1>
+          <h1 className="title text-4xl font-bold md:my-4 my-2 capitalize">{project.title}</h1>
         </header>
         <div className="hero_section flex flex-col gap-2">
           <img src={project.img} alt="project img" className="w-[700px]" />

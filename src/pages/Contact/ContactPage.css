@@ -1,0 +1,14 @@
+
+
+@media screen and (width>900px)
+{
+    .contact_section_bg{
+        background-position:  center right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("../../assets/images/contact_bg_light_2.jpg");
+    
+    }
+}
+
+

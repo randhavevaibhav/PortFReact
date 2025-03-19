@@ -23,7 +23,7 @@ export const ProjectsListPage = () => {
                   />
 
                   <div>
-                    <h2 className="title text-3xl font-semibold mb-3 md:mt-0 mt-2">
+                    <h2 className="title text-3xl font-bold mb-3 md:mt-0 mt-2">
                       {project.title}
                     </h2>
                     <p className="summary text-start">{project.summary}</p>

@@ -3,6 +3,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { contactFormSchema } from "../../pages/Contact/contactFormSchema";
 import emailjs from "@emailjs/browser";
+import {
+  emailJsPublicKey,
+  emailJsServiceId,
+  emailJsTemplateId,
+} from "../../utils/envVariables";
+import toast, { Toaster } from "react-hot-toast";
 export const ContactForm = () => {
   const {
     handleSubmit,
@@ -13,25 +19,25 @@ export const ContactForm = () => {
     resolver: yupResolver(contactFormSchema),
   });
 
-  const [formError, setFormError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef(null);
 
   const onSubmit = async (data) => {
-    console.log("form data ===> ", data);
-    console.log("formRef.current data ===> ", formRef.current);
+    // console.log("form data ===> ", data);
+    // console.log("formRef.current data ===> ", formRef.current);
     setIsLoading(true);
 
     emailjs
-      .sendForm("service_a33pcif", "template_f4ebpc3", formRef.current, {
-        publicKey: "IprBFL0utl8tmQ47H",
+      .sendForm(emailJsServiceId, emailJsTemplateId, formRef.current, {
+        publicKey: emailJsPublicKey,
       })
       .then((res) => {
-        console.log("result ===> ", res);
+        // console.log("result ===> ", res);
+        toast.success(`Message send successfully !`);
       })
       .catch((err) => {
-        setFormError(err);
         console.log("result ===> ", err);
+        toast.error(`Something went wrong !`);
       })
       .finally(() => {
         setIsLoading(false);
@@ -43,13 +49,14 @@ export const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="lg:order-first order-last p-2 flex flex-col md:gap-4 gap-2 w-full"
+        className=" lg:order-first order-last px-8 py-4 flex flex-col gap-4  w-full "
         ref={formRef}
       >
-        <header className="md:py-2 py-1">
+        <header className="flex items-center md:pt-2 md:pb-4 pb-2 py-1 gap-4  border-b-2 border-gray-500">
           <h1 className="md:text-3xl text-2xl font-bold tracking-wide">
             Get in touch
           </h1>
+          <span className="text-4xl">👋</span>
         </header>
 
         <div className="input_container flex flex-col gap-1">
@@ -62,7 +69,11 @@ export const ContactForm = () => {
           <input
             type="text"
             placeholder="Name"
-            className="px-2 md:py-2 py-1 text-black rounded-md outline-none dark:border-none border border-gray-300"
+            className={`px-2 md:py-2 py-1 text-black rounded-md outline-none  border-2   placeholder-gray-800 ${
+              errors.name?.message
+                ? `border-red-500`
+                : `border-themeborder focus:outline-[#1F51FF] focus:border-none`
+            }`}
             {...register("name")}
             disabled={isLoading}
           />
@@ -80,9 +91,13 @@ export const ContactForm = () => {
             Email:{" "}
           </label>
           <input
-            type="email"
+           
             placeholder="Email"
-            className="md:py-2 py-1 px-2 text-black rounded-md outline-none dark:border-none border border-gray-300"
+            className={`md:py-2 py-1 px-2 text-black rounded-md outline-none  border-2  placeholder-gray-800  ${
+              errors.user_mail?.message
+                ? `border-red-500`
+                : `border-themeborder focus:outline-[#1F51FF] focus:border-none`
+            }`}
             {...register("user_mail")}
             disabled={isLoading}
           />
@@ -101,7 +116,7 @@ export const ContactForm = () => {
           </label>
           <textarea
             rows={3}
-            className="p-2  text-black rounded-md outline-none dark:border-none border border-gray-300 "
+            className="p-2  text-black rounded-md outline-none dark:border-none border border-themeborder placeholder-gray-800 focus:outline-[#1F51FF] focus:border-none"
             placeholder="Message"
             {...register("message")}
           />
@@ -110,19 +125,15 @@ export const ContactForm = () => {
           <button
             type="submit"
             className={`md:px-5 md:py-3 py-2 px-2 border-themeborder border rounded-md font-bold inline-flex leading-none  bg-background hover:border-primary ${
-              isLoading ? `cursor-not-allowed` : ""
+              isLoading ? `cursor-not-allowed` : ``
             }`}
             disabled={isLoading}
           >
             Submit
           </button>
         </div>
-        {formError ? (
-          <p className="text-red-500 font-semibold tracking-wide text-sm">
-            Error while submitting form
-          </p>
-        ) : null}
       </form>
+      <Toaster />
     </>
   );
 };
