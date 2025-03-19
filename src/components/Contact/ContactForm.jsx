@@ -49,7 +49,7 @@ export const ContactForm = () => {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className=" lg:order-first order-last px-8 py-4 flex flex-col gap-4  w-full "
+        className=" lg:order-first order-last md:px-8 px-4 py-4 flex flex-col gap-4  w-full "
         ref={formRef}
       >
         <header className="flex items-center md:pt-2 md:pb-4 pb-2 py-1 gap-4  border-b-2 border-gray-500">
@@ -91,7 +91,6 @@ export const ContactForm = () => {
             Email:{" "}
           </label>
           <input
-           
             placeholder="Email"
             className={`md:py-2 py-1 px-2 text-black rounded-md outline-none  border-2  placeholder-gray-800  ${
               errors.user_mail?.message
