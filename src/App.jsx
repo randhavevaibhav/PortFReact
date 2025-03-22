@@ -10,7 +10,6 @@ import { ContactPage } from "./pages/Contact/ContactPage";
 import { getLocalStorageItem } from "./utils/browser";
 const App = () => {
   useEffect(() => {
-    console.log("app useEffect");
     const selectedTheme = getLocalStorageItem("selectedTheme");
 
     if (selectedTheme) {

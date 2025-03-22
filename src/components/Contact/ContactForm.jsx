@@ -2,12 +2,8 @@ import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { contactFormSchema } from "../../pages/Contact/contactFormSchema";
-import emailjs from "@emailjs/browser";
-import {
-  emailJsPublicKey,
-  emailJsServiceId,
-  emailJsTemplateId,
-} from "../../utils/envVariables";
+import axios from "axios";
+
 import toast, { Toaster } from "react-hot-toast";
 export const ContactForm = () => {
   const {
@@ -24,13 +20,21 @@ export const ContactForm = () => {
 
   const onSubmit = async (data) => {
     // console.log("form data ===> ", data);
-    // console.log("formRef.current data ===> ", formRef.current);
+
     setIsLoading(true);
 
-    emailjs
-      .sendForm(emailJsServiceId, emailJsTemplateId, formRef.current, {
-        publicKey: emailJsPublicKey,
-      })
+    axios
+      .post(
+        `http://localhost:8004/mail`,
+        {
+          name: data.name,
+          email: data.user_mail,
+          message: data.message,
+        },
+        {
+          withCredentials: true,
+        }
+      )
       .then((res) => {
         // console.log("result ===> ", res);
         toast.success(`Message send successfully !`);
