@@ -1,9 +1,9 @@
-import testIMg from "../../assets/images/test.jpg";
+import Blog_W from "../../assets/images/Blog_W.png";
 
 export const allProjectsList = [
   {
     id: 1,
-    img: testIMg,
+    img: Blog_W,
     title: "Blogging website",
     summary: `A Blogging website build using ReactJs for front-end, Nodejs as backend and postgres for database.`,
     ProjectTechStackList: [
