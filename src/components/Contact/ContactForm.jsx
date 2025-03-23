@@ -25,7 +25,7 @@ export const ContactForm = () => {
 
     axios
       .post(
-        `http://localhost:8004/mail`,
+        `https://email-js-api.vercel.app/mail`,
         {
           name: data.name,
           email: data.user_mail,
