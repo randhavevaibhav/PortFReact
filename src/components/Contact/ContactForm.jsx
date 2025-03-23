@@ -142,7 +142,7 @@ export const ContactForm = () => {
       </form>
 
       <Modal
-        isOpen={true}
+        isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         title={`💬 Sending message please wait ...`}
         isCloseable={false}
