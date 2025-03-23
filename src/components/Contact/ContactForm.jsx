@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { contactFormSchema } from "../../pages/Contact/contactFormSchema";
 import axios from "axios";
-
+import { Modal } from "../common/Modal/Modal";
+import loadingGIF from "../../assets/images/Loading_GIF.gif";
 import toast, { Toaster } from "react-hot-toast";
 export const ContactForm = () => {
   const {
@@ -17,11 +18,13 @@ export const ContactForm = () => {
 
   const [isLoading, setIsLoading] = useState(false);
   const formRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onSubmit = async (data) => {
     // console.log("form data ===> ", data);
 
     setIsLoading(true);
+    setIsModalOpen(true);
 
     axios
       .post(
@@ -45,6 +48,7 @@ export const ContactForm = () => {
       })
       .finally(() => {
         setIsLoading(false);
+        setIsModalOpen(false);
         reset();
       });
   };
@@ -136,6 +140,21 @@ export const ContactForm = () => {
           </button>
         </div>
       </form>
+
+      <Modal
+        isOpen={true}
+        onClose={() => setIsModalOpen(false)}
+        title={`💬 Sending message please wait ...`}
+        isCloseable={false}
+      >
+        <div className="flex items-center justify-center">
+          <img
+            src={loadingGIF}
+            alt="loading gif"
+            className="object-cover rounded-lg w-56"
+          />
+        </div>
+      </Modal>
       <Toaster />
     </>
   );
