@@ -1,4 +1,4 @@
-import Blog_W from "../../assets/images/Blog_W.png";
+import Blog_W from "../../assets/images/BlogW.png";
 
 export const allProjectsList = [
   {
@@ -36,9 +36,12 @@ export const allProjectsList = [
 [live website link](https://blog-w-three.vercel.app)
 ### Features:
 1. User can create a blog, edit an existing blog, delete an blog. 
-2. Comment on other users blogs,delete his own comment. 
-3. User can like blog article. 
-4. User can see the stats of published blogs in users dashboard.
-5. USer can update his information like email and user name.`,
+2. User can comment on other users blogs,delete/edit own comment,can create nested replies. 
+3. User can like,bookmark blog article. 
+4. User can see the stats (likes,comments) of published blogs in users dashboard.
+5. User can view/update his personal info.
+6. User can follow/un-follow other user.
+7. User can see following user blogs.
+8. Implemented Infinite scroll and optimistic updates for like,bookmark post.`,
   },
 ];
