@@ -44,7 +44,7 @@ export const AboutMeSection = () => {
       </div>
       <div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1CZuRwT9uHImm5OsHCydMLHrd_vFsg_Yq"
+          href="https://drive.google.com/uc?export=download&id=1R35DDyOAxyO3D5gefsJeRM9gjXZdURLQ"
           className="font-semibold underline text-primary"
         >
           Download Resume
