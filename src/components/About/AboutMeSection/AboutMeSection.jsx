@@ -15,7 +15,7 @@ export const AboutMeSection = () => {
         <div className="description_container ">
           <p className="sm:text-lg text-base mb-2">
             I am a <b>React</b> and <b>JavaScript</b> developer with{" "}
-            <b>total 3+ years</b> of experience in building scalable web
+            <b>total 4.5 years</b> of experience in building scalable web
             applications using <b>React</b>, <b>Redux</b>, <b>TypeScript</b>,{" "}
             <b>PostgreSQL</b>, <b>Tailwind CSS</b>,and <b>Node.js.</b>
           </p>
@@ -44,7 +44,7 @@ export const AboutMeSection = () => {
       </div>
       <div>
         <a
-          href="https://drive.google.com/uc?export=download&id=1R35DDyOAxyO3D5gefsJeRM9gjXZdURLQ"
+          href="https://drive.google.com/file/d/1DZzoiThbePmqU-0Z6_v1ZrVYfSM9md1g/view?usp=sharing"
           className="font-semibold underline text-primary"
         >
           Download Resume
