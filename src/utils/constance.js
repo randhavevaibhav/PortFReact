@@ -1,0 +1,1 @@
+export const EXPERIENCE_IN_YEARS = `4.5 Years`

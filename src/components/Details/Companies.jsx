@@ -7,7 +7,7 @@ const companyList = [
     name: "CouponCabin",
     companyImg: CouponCabinImg,
     position: "JavaScript Developer",
-    dates: "March 2024 - present - 11 months",
+    dates: "March 2024 - May 2026 - 2 years 2 months",
     description: `Developed and maintained a Chrome extension with React.js, using Node.js for server-side logic. Managed Postgres database views and tables. Ensured seamless UI/UX integration and collaborated in an Agile environment with daily stand-ups and sprint planning.`,
   },
   {

@@ -1,11 +1,12 @@
-import {MainPageLayout} from "../../components/MainPageLayout/MainPageLayout";
+import { MainPageLayout } from "../../components/MainPageLayout/MainPageLayout";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { allProjectsList } from "./data";
-import {Pills} from "../../components/common/Pills/Pills";
+import { Pills } from "../../components/common/Pills/Pills";
 import { useScrollTop } from "../../hooks/useScrollTop";
 import ReactMarkdown from "react-markdown";
 import "./ProjectPage.css";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { useEffect } from "react";
 export const ProjectPage = () => {
   useScrollTop();
   const { id } = useParams();
@@ -15,18 +16,31 @@ export const ProjectPage = () => {
     return project.id === Number(id);
   });
 
-  const handleGoBack =()=>{
-    navigate(-1)
-  }
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+
+  useEffect(()=>{
+    //make markdown links to target="_blank"
+    Array.from(document.links)
+    .filter(link => link.hostname != window.location.hostname)
+    .forEach(link => link.target = '_blank');
+  },[])
   return (
     <MainPageLayout>
       <article key={project.id} className="flex flex-col gap-4 text-primary">
         <header>
-          <button to={"/projects"} className="group flex items-center gap-2 bg-base_surface px-3 py-2 font-semibold rounded-md" onClick={handleGoBack}>
-          <IoMdArrowRoundBack className="group-hover:-translate-x-1 duration-300"/>
-          <span>Back</span>
-          </button>
-          <h1 className="title text-4xl font-bold md:my-4 my-2 capitalize">{project.title}</h1>
+          <Link
+            to={"/projects"}
+            className="w-fit group flex items-center gap-2 bg-base_surface px-3 py-2 font-semibold rounded-md"
+            onClick={handleGoBack}
+          >
+            <IoMdArrowRoundBack className="group-hover:-translate-x-1 duration-300" />
+            <span>Back</span>
+          </Link>
+          <h1 className="title text-4xl font-bold md:my-4 my-2 capitalize">
+            {project.title}
+          </h1>
         </header>
         <div className="hero_section flex flex-col gap-2">
           <img src={project.img} alt="project img" className="w-[700px]" />
@@ -34,14 +48,14 @@ export const ProjectPage = () => {
           <Pills list={project.ProjectTechStackList} />
         </div>
         <div className="fullDesc">
-          <h2 className="text-3xl font-bold mb-6 tracking-wider">Description</h2>
+          <h2 className="text-3xl font-bold mb-6 tracking-wider">
+            Description
+          </h2>
           <div className="markdown_container prose prose-strong:text-primary prose-em:text-primary prose-li:text-primary prose-a:text-primary prose-p:text-primary prose-headings:text-primary">
-            <ReactMarkdown >{project.fullDesc}</ReactMarkdown>
+            <ReactMarkdown>{project.fullDesc}</ReactMarkdown>
           </div>
         </div>
       </article>
     </MainPageLayout>
   );
 };
-
-

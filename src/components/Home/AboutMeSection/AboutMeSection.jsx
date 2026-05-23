@@ -3,6 +3,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import profileImg from "../../../assets/images/profile.webp";
 import { Link } from "react-router-dom";
 import Typed from "typed.js";
+import { ResumeDownLoadBtn } from "../../ResumeDownLoadBtn/ResumeDownLoadBtn";
+import { Experience } from "../../Experience/Experience";
 
 export const AboutMeSection = () => {
   const titleRef = useRef(null);
@@ -40,7 +42,7 @@ export const AboutMeSection = () => {
           I am <span ref={titleRef}></span> Developer
         </h2>
         <p className="text-base text-base-text-weak sm:text-lg text-primary">
-          Welcome to my portfolio! I'm a web developer skilled in React, Redux,
+          Welcome to my portfolio! I'm a web developer with <span className="text-xl"><Experience/></span> of experience. Skilled in React, Redux,
           JavaScript, TypeScript, PostgreSQL, and Tailwind CSS. I specialize in
           building dynamic, responsive applications with clean, maintainable
           code. Explore my work to see how I can help bring your ideas to life!
@@ -53,12 +55,7 @@ export const AboutMeSection = () => {
           >
             About Me
           </Link>
-          <a
-            href="https://drive.google.com/uc?export=download&id=1CZuRwT9uHImm5OsHCydMLHrd_vFsg_Yq"
-            className="border border-themeborder px-2 py-1 rounded bg-background text-primary"
-          >
-            Download Resume
-          </a>
+         <ResumeDownLoadBtn/>
         </div>
       </div>
     </div>

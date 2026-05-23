@@ -1,5 +1,6 @@
 import React from 'react'
 import {Section} from '../../common/Section/Section'
+import { ResumeDownLoadBtn } from '../../ResumeDownLoadBtn/ResumeDownLoadBtn'
 
 export const ContactSection = () => {
   return (
@@ -11,9 +12,7 @@ export const ContactSection = () => {
         randhavevaibhav3@gmail.com
       </a>
     </p>
-    <a href="#" className="underline text-primary">
-      Download Resume
-    </a>
+   <ResumeDownLoadBtn/>
   </Section>
   )
 }
